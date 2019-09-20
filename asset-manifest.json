@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/bangweiz/diet_track/static/css/main.c8de44df.chunk.css",
-    "main.js": "/bangweiz/diet_track/static/js/main.1832ff62.chunk.js",
-    "main.js.map": "/bangweiz/diet_track/static/js/main.1832ff62.chunk.js.map",
-    "runtime~main.js": "/bangweiz/diet_track/static/js/runtime~main.9ea7df83.js",
-    "runtime~main.js.map": "/bangweiz/diet_track/static/js/runtime~main.9ea7df83.js.map",
-    "static/css/2.96121624.chunk.css": "/bangweiz/diet_track/static/css/2.96121624.chunk.css",
-    "static/js/2.ead2b928.chunk.js": "/bangweiz/diet_track/static/js/2.ead2b928.chunk.js",
-    "static/js/2.ead2b928.chunk.js.map": "/bangweiz/diet_track/static/js/2.ead2b928.chunk.js.map",
-    "index.html": "/bangweiz/diet_track/index.html",
-    "precache-manifest.aedfe0bd78c9866ae84bd5a973af37b1.js": "/bangweiz/diet_track/precache-manifest.aedfe0bd78c9866ae84bd5a973af37b1.js",
-    "service-worker.js": "/bangweiz/diet_track/service-worker.js",
-    "static/css/2.96121624.chunk.css.map": "/bangweiz/diet_track/static/css/2.96121624.chunk.css.map",
-    "static/css/main.c8de44df.chunk.css.map": "/bangweiz/diet_track/static/css/main.c8de44df.chunk.css.map"
+    "main.css": "/diet_track/static/css/main.c8de44df.chunk.css",
+    "main.js": "/diet_track/static/js/main.b20d30c9.chunk.js",
+    "main.js.map": "/diet_track/static/js/main.b20d30c9.chunk.js.map",
+    "runtime~main.js": "/diet_track/static/js/runtime~main.b2b4155c.js",
+    "runtime~main.js.map": "/diet_track/static/js/runtime~main.b2b4155c.js.map",
+    "static/css/2.96121624.chunk.css": "/diet_track/static/css/2.96121624.chunk.css",
+    "static/js/2.ac7588c0.chunk.js": "/diet_track/static/js/2.ac7588c0.chunk.js",
+    "static/js/2.ac7588c0.chunk.js.map": "/diet_track/static/js/2.ac7588c0.chunk.js.map",
+    "index.html": "/diet_track/index.html",
+    "precache-manifest.4db365fed02662682572963beb126334.js": "/diet_track/precache-manifest.4db365fed02662682572963beb126334.js",
+    "service-worker.js": "/diet_track/service-worker.js",
+    "static/css/2.96121624.chunk.css.map": "/diet_track/static/css/2.96121624.chunk.css.map",
+    "static/css/main.c8de44df.chunk.css.map": "/diet_track/static/css/main.c8de44df.chunk.css.map"
   }
 }
