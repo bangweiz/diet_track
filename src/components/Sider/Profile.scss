@@ -1,0 +1,80 @@
+.profile {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  height: 192px;
+  border-bottom: 1px solid rgba(0, 0, 0, .12);
+
+  @media screen and (max-width: 768px) {
+    display: none;
+    border: none;
+  }
+
+  .profile-weight, .profile-height {
+    width: 56px;
+    height: 56px;
+    background-color: rgba($color: #000000, $alpha: .5);
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 44px;
+
+    .profile-number {
+      display: inline-block;
+      width: 40px;
+      height: 24px;
+      line-height: 24px;
+      font-size: 20px;
+      margin: 8px;
+      margin-bottom: 0;
+      letter-spacing: .25px;
+      font-weight: 500;
+    }
+
+    .profile-unit {
+      display: inline-block;
+      width: 40px;
+      height: 16px;
+      font-size: 12px;
+      line-height: 1.33;
+      letter-spacing: .4px;
+      transform: translateY(-5px);
+    }
+  }
+
+  .profile-weight {
+    right: 232px;
+  }
+
+  .profile-height {
+    right: 32px;
+  }
+
+  .profile-avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    position: absolute;
+    top: 24px;
+    left: 112px;
+    background-color: rgba($color: #000000, $alpha: .5);
+  }
+
+  .profile-name {
+    display: inline-block;
+    width: 288px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+    position: absolute;
+    top: 132px;
+    left: 16px;
+
+    .profile-last-name {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+}

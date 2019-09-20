@@ -1,0 +1,16 @@
+.add-btn {
+  width: 56px;
+  height: 56px;
+  background-color: #6200ee;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  .add-btn-icon {
+    color: #fff;
+    font-size: 14px;
+    margin: 21px;
+  }
+}
