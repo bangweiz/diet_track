@@ -106,7 +106,7 @@ class Statistic extends PureComponent {
     });
     percentage = Math.floor((totalCal / this.props.daily_goal) * 100);
     this.barRef.current.style.width = percentage > 100 ? '100%' : (percentage + '%');
-    this.perRef.current.style.marginLeft = `${(2.88 * percentage) > 288 ? 280 : (2.88 * percentage)}px`;
+    this.perRef.current.style.marginLeft = `${percentage > 95 ? 95 : percentage}%`;
     this.setState({ totalCal, breakfast, lunch, dinner, snack, percentage });
   }
 }
