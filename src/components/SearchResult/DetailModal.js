@@ -2,7 +2,12 @@ import React, { PureComponent } from "react";
 import { connect } from "react-redux";
 import { Icon, Spin } from "antd";
 
-import { targetFood, clearTargetFood, addFood, clearFood } from "../../actions/index";
+import {
+  targetFood,
+  clearTargetFood,
+  addFood,
+  clearFood
+} from "../../actions/index";
 import { isEmpty } from "../../utils/isEmpty";
 import "./DetailModal.scss";
 
@@ -137,7 +142,7 @@ class DetailModal extends PureComponent {
 
   removeOne = () => {
     let { serves } = this.state;
-    serves = serves > 1 ? serves - 1 : 0;
+    serves = serves >= 0 ? serves - 1 : 0;
     this.setState({
       serves,
       grams: this.props.item.serving_weight_grams * serves,
@@ -147,7 +152,7 @@ class DetailModal extends PureComponent {
 
   submit = e => {
     e.preventDefault();
-    if(this.state.serves > 0) {
+    if (this.state.serves > 0) {
       this.props.addFood({
         food_name: this.props.item.food_name,
         meal_type: this.state.meal,
@@ -162,14 +167,13 @@ class DetailModal extends PureComponent {
     this.toggleModal();
     this.props.clearFood();
     this.props.goToToday();
-  }
+  };
 }
 
 const mapStateToProps = state => ({
   item: state.target
 });
 
-// const DetailModalWithLoading = Loading("item")(DetailModal);
 export default connect(
   mapStateToProps,
   { targetFood, clearTargetFood, addFood, clearFood }
