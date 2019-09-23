@@ -142,7 +142,7 @@ class DetailModal extends PureComponent {
 
   removeOne = () => {
     let { serves } = this.state;
-    serves = serves >= 0 ? serves - 1 : 0;
+    serves = serves > 0 ? serves - 1 : 0;
     this.setState({
       serves,
       grams: this.props.item.serving_weight_grams * serves,
