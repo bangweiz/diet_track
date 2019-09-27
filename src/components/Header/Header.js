@@ -1,6 +1,7 @@
 import React, { PureComponent } from "react";
 import { connect } from "react-redux";
 import { Icon } from "antd";
+import PropTypes from "prop-types";
 
 import { searchFood, clearFood } from "../../actions";
 import Profile from "../Sider/Profile";
@@ -56,6 +57,18 @@ class Header extends PureComponent {
       ? this.props.searchFood(e.currentTarget.value)
       : this.props.clearFood();
   };
+}
+
+Header.propTypes = {
+  searchFood: PropTypes.func.isRequired,
+  clearFood: PropTypes.func.isRequired,
+  first_name: PropTypes.string.isRequired,
+  last_name: PropTypes.string.isRequired,
+  weight_kg: PropTypes.number.isRequired,
+  height_cm: PropTypes.number.isRequired,
+  date: PropTypes.string.isRequired,
+  prevDay: PropTypes.func.isRequired,
+  nextDay: PropTypes.func.isRequired
 }
 
 export default connect(

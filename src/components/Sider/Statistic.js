@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 
 import "./Statistic.scss";
 
-class Statistic extends PureComponent {
+export class Statistic extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
