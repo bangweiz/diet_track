@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import Avart from "../../asset/avatar.png";
 import "./Profile.scss";
@@ -26,5 +27,12 @@ const Profile = props => {
     </div>
   );
 };
+
+Header.propTypes = {
+  first_name: PropTypes.string.isRequired,
+  last_name: PropTypes.string.isRequired,
+  weight_kg: PropTypes.number.isRequired,
+  height_cm: PropTypes.number.isRequired
+}
 
 export default Profile;

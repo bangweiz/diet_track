@@ -1,6 +1,7 @@
 import React, { PureComponent } from "react";
 import { connect } from "react-redux";
 import { Icon, Spin } from "antd";
+import PropTypes from "prop-types";
 
 import {
   targetFood,
@@ -173,6 +174,17 @@ class DetailModal extends PureComponent {
 const mapStateToProps = state => ({
   item: state.target
 });
+
+DetailModal.propTypes = {
+  targetFood: PropTypes.func.isRequired,
+  clearTargetFood: PropTypes.func.isRequired,
+  addFood: PropTypes.func.isRequired,
+  clearFood: PropTypes.func.isRequired,
+  goToToday: PropTypes.func.isRequired,
+  item: PropTypes.object.isRequired,
+  target: PropTypes.object.isRequired,
+  visibility: PropTypes.bool.isRequired
+}
 
 export default connect(
   mapStateToProps,

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import "./FoodList.scss";
 
@@ -25,5 +26,9 @@ const FoodList = ({ target }) => {
     </div>
   );
 };
+
+FoodList.propTypes = {
+  target: PropTypes.object.isRequired
+}
 
 export default FoodList;

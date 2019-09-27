@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
 import { connect } from "react-redux";
+import PropTypes from "prop-types";
 
 import { addFood } from "../../actions/index";
 import ResultItem from "./ResultItem";
@@ -80,6 +81,12 @@ class SearchResult extends PureComponent {
 const mapStateToProps = state => ({
   searchResults: state.food
 });
+
+SearchResult.propTypes = {
+  searchResults: PropTypes.array,
+  addFood: PropTypes.func.isRequired,
+  goToToday: PropTypes.func.isRequired
+}
 
 export default connect(
   mapStateToProps,

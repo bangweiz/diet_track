@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
 import { connect } from "react-redux";
+import PropTypes from "prop-types";
 
 import "./Statistic.scss";
 
@@ -114,6 +115,12 @@ export class Statistic extends PureComponent {
 const mapStateToProps = state => ({
   savedFood: state.savedFood
 });
+
+Statistic.propTypes = {
+  savedFood: PropTypes.array,
+  daily_goal: PropTypes.number.isRequired,
+  data: PropTypes.array
+}
 
 export default connect(
   mapStateToProps,

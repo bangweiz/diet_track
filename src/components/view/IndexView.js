@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
 import { connect } from "react-redux";
+import PropTypes from "prop-types";
 
 import Header from "../Header/Header";
 import Sider from "../Sider/Sider";
@@ -111,6 +112,10 @@ class IndexView extends PureComponent {
 const mapStateToProps = state => ({
   diet: state.diet
 });
+
+IndexView.propTypes = {
+  diet: PropTypes.object.isRequired
+}
 
 export default connect(
   mapStateToProps,

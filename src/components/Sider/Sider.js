@@ -1,4 +1,5 @@
 import React, { PureComponent } from "react";
+import PropTypes from "prop-types";
 
 import Profile from "./Profile";
 import Statistic from "./Statistic";
@@ -18,6 +19,15 @@ class Sider extends PureComponent {
       </div>
     );
   }
+}
+
+Sider.propTypes = {
+  first_name: PropTypes.string.isRequired,
+  last_name: PropTypes.string.isRequired,
+  weight_kg: PropTypes.number.isRequired,
+  height_cm: PropTypes.number.isRequired,
+  daily_goal: PropTypes.number.isRequired,
+  data: PropTypes.array
 }
 
 export default Sider;

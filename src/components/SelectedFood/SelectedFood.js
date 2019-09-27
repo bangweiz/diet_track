@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
 import { connect } from "react-redux";
+import PropTypes from "prop-types";
 
 import FoodList from "./FoodList";
 import "./SelectedFood.scss";
@@ -44,6 +45,11 @@ class SelectedFood extends PureComponent {
 const mapStateToProps = state => ({
   savedFood: state.savedFood
 });
+
+FoodList.propTypes = {
+  savedFood: PropTypes.array,
+  data: PropTypes.array
+}
 
 export default connect(
   mapStateToProps,
